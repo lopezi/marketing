@@ -80,7 +80,7 @@ router.get('/events', function (req, res) {
     res.redirect('https://developer.rchain.coop/conference');
 });
 
-router.get('/blog',  (req, res, next) => {  
+router.get('/blog',  (req, res, next) => {
     res.redirect(301, 'https://blog.rchain.coop/');
 });
 
@@ -97,7 +97,7 @@ router.post('/newsletter-submission', function (req, res) {
 });
 
 router.get('*', function(req, res, next) {
-  let err = new Error(`${req.ip} tried to reach ${req.originalUrl}`); // Tells us which IP tried to reach a particular URL
+  let err = new Error('${req.ip} tried to reach ${req.originalUrl}'); // Tells us which IP tried to reach a particular URL
   err.statusCode = 404;
   err.shouldRedirect = true; //New property on err so that our middleware will redirect
   next(err);

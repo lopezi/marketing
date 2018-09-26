@@ -673,6 +673,15 @@ body {
 .something-else{
      background: radial-gradient(ellipse at bottom, #a50034 0%, #222222 100%);
      color: white;
+    height: 888px;
+ }
+.section#rhoSection .flexWrapper.something-else .textWrapper{
+    padding-top: 0;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
  }
 
 .something-else h2{
@@ -724,7 +733,7 @@ code {
 .solar-syst {
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     position: relative;
 }
 
