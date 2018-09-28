@@ -23,3 +23,11 @@ function navScroll() {
     }
 }
 
+
+
+function updateWidth() {
+    document.getElementById("window-width").innerHTML = document.documentElement.clientWidth;
+}
+
+window.addEventListener("resize", updateWidth);
+updateWidth();
